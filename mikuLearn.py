@@ -1,5 +1,6 @@
 # Intro
 print("Miku Security online:")
+
 # Info
 mikufan_count = 999999999999999
 concert_hall = "MikuFan2000 \"Productions \n;D"
