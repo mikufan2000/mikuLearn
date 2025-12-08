@@ -7,6 +7,7 @@ ip a
 cd
 ls
 pwd
+../
 #make folder
 mkdir
 #delete folder
