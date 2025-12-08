@@ -14,38 +14,18 @@ format quick fs=ntfs label="Recovery"
 create partition primary size=1024
 
 
-#.conf
+#.conf for gpuvirt passthrough 
 sudo nano /etc/mkinitcpio.conf
 vfio_pci vfio vfio_iommu_type1
 
 sudo nano /etc/modprobe.d/vfio.conf
-options vfio-pci ids=1002:73df,1002:ab28
+options vfio-pci ids=<YOUR:GPUID>,<ALSO:GPUAUDIO>
 
 #grub info
 sudo nano /etc/default/grub 
 amdgpu.ppfeaturemask=0xffffffff amd_iommu=on iommu=pt kvm.ignore_msrs=1
 sudo mkinitcpio -P
 sudo update-grub
-
-
-
-#GPU switcher
-sudo envycontrol -s hybrid
-sudo envycontrol -s integrated 
-
-#virt
-sudo virsh net-autostart default
-sudo virsh net-list --all 
-sudo virsh net-start default
-sudo pacman -S virt-manager qemu libvirt edk2-ovmf dnsmasq bridge-utils openbsd-netcat iptables-nft ovmf
-sudo systemctl status virtnetworkd.service
-sudo systemctl status virtnetworkd.socket
-sudo systemctl enable libvirtd.service
-systemctl start virtqemud 
-sudo systemctl enable virtqemud 
-    #status or enable
-
-echo drivetemp | sudo tee /etc/modules-load.d/drivetemp.conf
 
 #find usr
 whoami
@@ -79,16 +59,21 @@ scp <file> <user>@<ip address>:/home/<user>
 #scp cat.gif cat77@10.0.0.240:/home/cat77/Projects/tacotest
 #scp helix.tar.gz cat77@10.0.0.240:/home/cat77/Projects
 
-#etc notes 
-23:00.0 VGA compatible controller [0300]: NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] [10de:21c4] (rev a1)
-23:00.1 Audio device [0403]: NVIDIA Corporation TU116 High Definition Audio Controller [10de:1aeb] (rev a1)
+#  	# Manjaro commands #	#
 
-2f:00.0 VGA compatible controller [0300]: Advanced Micro Devices, Inc. [AMD/ATI] Navi 22 [Radeon RX 6700/6700 XT/6750 XT / 6800M/6850M XT] [1002:73df] (rev c5)
-2f:00.1 Audio device [0403]: Advanced Micro Devices, Inc. [AMD/ATI] Navi 21/23 HDMI/DP Audio Controller [1002:ab28]
-
--qemu mac settings 
--vga none
--device vfio-pci,host=23:00.0,bus=pcie.0,multifunction=on,x-vga=on
--device vfio-pci,host=23:00.1,bus=pcie.0 
-
--device vmware-svga\
+#GPU switcher
+sudo envycontrol -s hybrid
+sudo envycontrol -s integrated 
+#virt gpu passthrough ready
+sudo virsh net-autostart default
+sudo virsh net-list --all 
+sudo virsh net-start default
+sudo pacman -S virt-manager qemu libvirt edk2-ovmf dnsmasq bridge-utils openbsd-netcat iptables-nft ovmf
+sudo systemctl status virtnetworkd.service
+sudo systemctl status virtnetworkd.socket
+sudo systemctl enable libvirtd.service
+systemctl start virtqemud 
+sudo systemctl enable virtqemud 
+    #status or enable
+echo drivetemp | sudo tee /etc/modules-load.d/drivetemp.conf
+# 	# 
