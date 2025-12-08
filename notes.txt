@@ -25,14 +25,20 @@ tar -xvf <filename>
 scp <username@remote_host:/path/to/remote/file> </path/to/local/destination>
 #send file from host to target
 scp <file> <user>@<ip address>:/home/<user>
+#ssh
+ssh <usr>@<ipaddress>
 
 #scp notes.bash cat77@10.0.0.240:/home/cat77/Projects
 #scp cat.gif cat77@10.0.0.240:/home/cat77/Projects/bass
 #scp cat.gif cat77@10.0.0.240:/home/cat77/Projects/tacotest
 #scp helix.tar.gz cat77@10.0.0.240:/home/cat77/Projects
 
-#helix controls
+#Videos
+
+#helix
 https://www.youtube.com/watch?v=YkEeugn041M
+#windows ssh 2025
+https://www.youtube.com/watch?v=owebHznEGQ8
 
 #windows commands
 ipconfig
@@ -46,7 +52,7 @@ reagentc /enable
 format quick fs=ntfs label="Recovery"
 create partition primary size=1024
 #  	# Manjaro commands #	#
-
+sudo pacman -S openssh
 #GPU switcher
 sudo envycontrol -s hybrid
 sudo envycontrol -s integrated 
