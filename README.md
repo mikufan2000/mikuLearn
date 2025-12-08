@@ -1,3 +1,3 @@
 mikuLearn.py is basic print,
 math.py is math notes.
-notes.bash is just notes and most used commands
+notes is just notes and most used commands i use when trained people at work or learned along the way updating slowly
