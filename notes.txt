@@ -15,6 +15,14 @@ rmdir
 #delete target
 rm -r
 
+#check hw
+lspci
+lspci | grep -i <search term>
+        #AMD, Intel, VGA, network, audio, usb, storage, sata
+lspci -nn | grep -i <search term>
+        #nn =  gives you device codes, useful for passthrough devices
+		#grep = search, -i = ignore case sensitive, etc etc. 
+
 #compress file
 tar -cvf <name.tar.gz> <file>
 #decompress
