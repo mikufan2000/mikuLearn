@@ -6,6 +6,8 @@ ip a
 #folder navi
 cd
 ls
+	#-l
+	# d - directory, r - read, w - write, x - execute
 pwd
 ../
 #make folder
