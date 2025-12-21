@@ -8,6 +8,10 @@ cd
 ls
 	#-l
 	# d - directory, r - read, w - write, x - execute
+rwx rwx rwx # --- = off
+--- --- ---
+user group evryone
+
 pwd
 ../
 #make folder
