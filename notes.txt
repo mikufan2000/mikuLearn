@@ -6,12 +6,6 @@ ip a
 #folder navi
 cd
 ls
-	#-l
-	# d - directory, r - read, w - write, x - execute
-rwx rwx rwx # --- = off
---- --- ---
-user group evryone
-
 pwd
 ../
 #make folder
@@ -28,6 +22,13 @@ lspci | grep -i <search term>
 lspci -nn | grep -i <search term>
         #nn =  gives you device codes, useful for passthrough devices
 		#grep = search, -i = ignore case sensitive, etc etc. 
+
+#Permissions
+ls -l
+	# d - directory, r - read, w - write, x - execute
+rwx rwx rwx # --- = off
+--- --- ---
+user group evryone
 
 #compress file
 tar -cvf <name.tar.gz> <file>
