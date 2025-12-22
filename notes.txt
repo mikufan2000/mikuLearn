@@ -22,6 +22,7 @@ lspci | grep -i <search term>
 lspci -nn | grep -i <search term>
         #nn =  gives you device codes, useful for passthrough devices
 		#grep = search, -i = ignore case sensitive, etc etc. 
+#lspci -k | grep -E "vfio-pci|NVIDIA"
 
 #Permissions
 ls -l
