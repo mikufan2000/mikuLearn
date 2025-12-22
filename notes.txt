@@ -25,7 +25,8 @@ lspci | grep -i <search term>
 lspci -nn | grep -i <search term>
         #nn =  gives you device codes, useful for passthrough devices
 		#grep = search, -i = ignore case sensitive, etc etc. 
-#lspci -k | grep -E "vfio-pci|NVIDIA"
+lspci -k | grep -E "vfio-pci|NVIDIA"
+	#Checks if NVIDIA is used by vfio-pci
 nmcli device status
 	#network devices
 
@@ -108,7 +109,7 @@ options vfio-pci ids=<YOUR:GPUID>,<ALSO:GPUAUDIO>
 
 #grub info
 sudo nano /etc/default/grub 
-amdgpu.ppfeaturemask=0xffffffff amd_iommu=on iommu=pt kvm.ignore_msrs=1 vfio-pci.ids=<YOUR:GPUID>,<ALSO:GPUAUDIO>
+amdgpu.ppfeaturemask=0xffffffff <AMD/INTEL>_iommu=on iommu=pt vfio-pci.ids=<YOUR:GPUID>,<ALSO:GPUAUDIO>
 sudo mkinitcpio -P
 sudo update-grub
 # 	# 
