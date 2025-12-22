@@ -15,7 +15,8 @@ rmdir
 #delete target
 rm -r
 rm -rf
-nmcli device status
+
+
 #check hw
 
 lspci
@@ -25,6 +26,8 @@ lspci -nn | grep -i <search term>
         #nn =  gives you device codes, useful for passthrough devices
 		#grep = search, -i = ignore case sensitive, etc etc. 
 #lspci -k | grep -E "vfio-pci|NVIDIA"
+nmcli device status
+	#network devices
 
 #Permissions
 ls -l
