@@ -89,6 +89,7 @@ systemctl start virtqemud
 sudo systemctl enable virtqemud 
     #status or enable
 echo drivetemp | sudo tee /etc/modules-load.d/drivetemp.conf
+#helix config path
 hx ~/.config/helix/config.toml
 ##alias 
 cat ~/.zshrc
