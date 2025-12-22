@@ -49,12 +49,14 @@ ssh <usr>@<ipaddress>
 #scp cat.gif cat77@10.0.0.240:/home/cat77/Projects/tacotest
 #scp helix.tar.gz cat77@10.0.0.240:/home/cat77/Projects
 
-#Videos
+#Videos/Links
 
 #helix
 https://www.youtube.com/watch?v=YkEeugn041M
 #windows ssh 2025
 https://www.youtube.com/watch?v=owebHznEGQ8
+#WinVirt
+https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 
 #windows commands
 ipconfig
@@ -95,7 +97,7 @@ options vfio-pci ids=<YOUR:GPUID>,<ALSO:GPUAUDIO>
 
 #grub info
 sudo nano /etc/default/grub 
-amdgpu.ppfeaturemask=0xffffffff amd_iommu=on iommu=pt kvm.ignore_msrs=1
+amdgpu.ppfeaturemask=0xffffffff amd_iommu=on iommu=pt kvm.ignore_msrs=1 vfio-pci.ids=<YOUR:GPUID>,<ALSO:GPUAUDIO>
 sudo mkinitcpio -P
 sudo update-grub
 # 	# 
