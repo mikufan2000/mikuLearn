@@ -11,6 +11,7 @@ ipconfig
 #navigation
 cd
 ls
+	#ls -lah l - list, a - hidden files
 pwd
 ../
 	#on windows "cd ../" 
