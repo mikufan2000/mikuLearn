@@ -19,9 +19,9 @@ rm -rf
 
 #file sizes
 df -h
-#
+	#lists disks and their partitions
 du -sh ~/Documents
-## s - summarize, h - human-readable = MB's KB's GB's etc.
+	# s - summarize, h - human-readable = MB's KB's GB's etc.
 
 #show all terminal programs
 compgen -a 
