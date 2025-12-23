@@ -1,4 +1,5 @@
 :D terminal notes 
+
 #find user
 whoami
 #find ip address
@@ -6,12 +7,14 @@ ip a
 	#linux
 ipconfig
 	#windows
+
 #navigation
 cd
 ls
 pwd
 ../
 	#on windows "cd ../" 
+
 #make folder
 mkdir
 #delete empty folder
@@ -19,6 +22,7 @@ rmdir
 #delete target
 rm -r
 rm -rf
+
 #move
 mv <OPTION> <SOURCE> <TARGET>
 		#OPTION: 
