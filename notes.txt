@@ -3,6 +3,9 @@
 whoami
 #ipadress
 ip a
+	#linux
+ipconfig
+	#windows
 #folder navi
 cd
 ls
@@ -77,10 +80,6 @@ https://www.youtube.com/watch?v=YkEeugn041M
 https://www.youtube.com/watch?v=owebHznEGQ8
 #winvirt
 https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
-
-#windows commands
-ipconfig
-diskpart
 
 #diskpart windows commands
 set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac gpt attributes=0x8000000000000001
