@@ -21,13 +21,17 @@ rm -r
 rm -rf
 #move
 mv <OPTION> <SOURCE> <TARGET>
-	#OPTION: i - interactive =  Prompts for confirmation before overwriting an existing file. f - force = overwrites existing files without prompt, regardless of permission. v - verbose = list files as moved u - update = moves the file if the source file is newer than the target file.
+		#OPTION: 
+i - interactive =  prompts for confirmation before overwriting an existing file. 
+f - force = overwrites existing files without prompt, regardless of permission.
+v - verbose = list files as moved.
+u - update = moves the file if the source file is newer than the target file.
 
 #file sizes
 df -h
-	#lists disks and their partitions
+		#lists disks and their partitions
 du -sh ~/Documents
-	# s - summarize, h - human-readable = MB's KB's GB's etc.
+		# s - summarize, h - human-readable = MB's KB's GB's etc.
 
 #show all terminal programs
 compgen -a 
@@ -43,9 +47,9 @@ lspci -nn | grep -i <search term>
         #nn =  gives you device codes, useful for passthrough devices
 		#grep = search, -i = ignore case sensitive, etc etc. 
 lspci -k | grep -E "vfio-pci|NVIDIA"
-	#Checks if NVIDIA is used by vfio-pci
+		#Checks if NVIDIA is used by vfio-pci
 nmcli device status
-	#network devices
+		#network devices
 
 #permissions
 ls -l
@@ -83,9 +87,9 @@ https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 
 #diskpart windows commands
 set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac gpt attributes=0x8000000000000001
-	#sets recovery 
+		#sets recovery 
 reagentc /enable
-	#disable or info work as well
+		#disable or info work as well
 format quick fs=ntfs label="Recovery"
 create partition primary size=1024
 
@@ -104,19 +108,19 @@ sudo systemctl status virtnetworkd.socket
 sudo systemctl enable libvirtd.service
 systemctl start virtqemud 
 sudo systemctl enable virtqemud 
-    #status or enable
+		#status or enable
 echo drivetemp | sudo tee /etc/modules-load.d/drivetemp.conf
 #helix config path
 hx ~/.config/helix/config.toml
 ##alias 
 echo $SHELL
-	#find out shell, in zsh case:
+		#find out shell, in zsh case:
 nano ~/.zshrc
-	#add "alias <alias>='<program>" to bottem line
+		#add "alias <alias>='<program>" to bottem line
 cat ~/.zshrc
-	#check if it is complete.
+		#check if it is complete.
 source ~/.zshrc
-	#finished
+		#finished
 ##alias hx='helix'
 source ~/.zshrc
 
