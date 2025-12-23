@@ -11,7 +11,7 @@ cd
 ls
 pwd
 ../
-	#use ../ on windows "cd ../" 
+	#on windows "cd ../" 
 #make folder
 mkdir
 #delete empty folder
