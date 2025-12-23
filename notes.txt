@@ -150,6 +150,7 @@ ipconfig getifaddr en0
 		#find ip address
 sudo ipconfig setenforceen0 DHCP; sudo ipconfig getifaddr en0
 		#renew wifi ip
+#	#
 
 #git copy these notes. INTO CURRENT FOLDER. C:\ by default for windows. helps to copy the path from explorer. then for example use "cd  D:\Notes" or "cd C:\Users\mikufanfakeusernametestthanksforreadingthisfar\Downloads"
 git clone https://github.com/mikufan2000/mikuLearn.git
