@@ -6,7 +6,7 @@ ip a
 	#linux
 ipconfig
 	#windows
-#folder navi
+#navigation
 cd
 ls
 pwd
