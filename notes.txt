@@ -62,7 +62,7 @@ scp <username@remote_host:/path/to/remote/file> </path/to/local/destination>
 #send file from host to target
 scp <file> <user>@<ip address>:/home/<user>
 #ssh
-ssh <usr>@<ipaddress>
+ssh <user>@<ipaddress>
 
 #scp notes.bash cat77@10.0.0.240:/home/cat77/Projects
 #scp cat.gif cat77@10.0.0.240:/home/cat77/Projects/bass
