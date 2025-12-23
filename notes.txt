@@ -1,7 +1,7 @@
 :D terminal notes 
 #find user
 whoami
-#ipadress
+#find ip address
 ip a
 	#linux
 ipconfig
