@@ -110,6 +110,8 @@ echo drivetemp | sudo tee /etc/modules-load.d/drivetemp.conf
 #helix config path
 hx ~/.config/helix/config.toml
 ##alias 
+echo $SHELL
+	#find out shell, in zsh case:
 nano ~/.zshrc
 	#add "alias <alias>='<program>" to bottem line
 cat ~/.zshrc
