@@ -81,14 +81,12 @@ ssh <user>@<ipaddress>
 #scp helix.tar.gz cat77@10.0.0.240:/home/cat77/Projects
 
 #videos/links
-
-#helix
 https://www.youtube.com/watch?v=YkEeugn041M
-#windows ssh 2025
+		#helix 
 https://www.youtube.com/watch?v=owebHznEGQ8
-#winvirt
+		#windows ssh 2025
 https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
-
+		#winvirt
 #diskpart windows commands
 set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac gpt attributes=0x8000000000000001
 		#sets recovery 
