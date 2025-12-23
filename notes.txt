@@ -8,22 +8,28 @@ cd
 ls
 pwd
 ../
+	#use ../ on windows "cd ../" 
 #make folder
 mkdir
-#delete folder
+#delete empty folder
 rmdir
 #delete target
 rm -r
 rm -rf
 
+#file sizes
+df -h
+#
+du -sh ~/Documents
+## s - summarize, h - human-readable = MB's KB's GB's etc.
+
 #show all terminal programs
-##Linux
 compgen -a 
-##Windows
+	#linux
 Get-Command -CommandType Application | Select-Object Name, Path
+	#windows
 
 #check hw
-
 lspci
 lspci | grep -i <search term>
         #AMD, Intel, VGA, network, audio, usb, storage, sata
@@ -46,7 +52,6 @@ user group evryone
 tar -cvf <name.tar.gz> <file>
 #decompress
 tar -xvf <filename>
- 
 #tar -cvf helix.tar.gz helix.mp3 helix.mp4 
 
 #grab file from target to host
@@ -102,8 +107,13 @@ echo drivetemp | sudo tee /etc/modules-load.d/drivetemp.conf
 #helix config path
 hx ~/.config/helix/config.toml
 ##alias 
+nano ~/.zshrc
+	#add "alias <alias>='<program>" to bottem line
 cat ~/.zshrc
-###alias hx='helix'
+	#check if it is complete.
+source ~/.zshrc
+	#finished
+##alias hx='helix'
 source ~/.zshrc
 
 #.conf for gpuvirt passthrough 
