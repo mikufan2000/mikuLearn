@@ -1,5 +1,5 @@
 :D
-#find usr
+#find user
 whoami
 #ipadress
 ip a
@@ -16,6 +16,9 @@ rmdir
 #delete target
 rm -r
 rm -rf
+#move
+mv <OPTION> <SOURCE> <TARGET>
+	#OPTION: i - interactive =  Prompts for confirmation before overwriting an existing file. f - force = overwrites existing files without prompt, regardless of permission. v - verbose = list files as moved u - update = moves the file if the source file is newer than the target file.
 
 #file sizes
 df -h
