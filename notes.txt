@@ -16,6 +16,11 @@ rmdir
 rm -r
 rm -rf
 
+#show all termial programs
+##Linux
+compgen -a 
+##Windows
+Get-Command -CommandType Application | Select-Object Name, Path
 
 #check hw
 
