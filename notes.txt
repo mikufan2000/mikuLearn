@@ -16,7 +16,7 @@ rmdir
 rm -r
 rm -rf
 
-#show all termial programs
+#show all terminal programs
 ##Linux
 compgen -a 
 ##Windows
@@ -35,7 +35,7 @@ lspci -k | grep -E "vfio-pci|NVIDIA"
 nmcli device status
 	#network devices
 
-#Permissions
+#permissions
 ls -l
 	# d - directory, r - read, w - write, x - execute
 rwx rwx rwx # --- = off
@@ -61,13 +61,13 @@ ssh <usr>@<ipaddress>
 #scp cat.gif cat77@10.0.0.240:/home/cat77/Projects/tacotest
 #scp helix.tar.gz cat77@10.0.0.240:/home/cat77/Projects
 
-#Videos/Links
+#videos/links
 
 #helix
 https://www.youtube.com/watch?v=YkEeugn041M
 #windows ssh 2025
 https://www.youtube.com/watch?v=owebHznEGQ8
-#WinVirt
+#winvirt
 https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 
 #windows commands
@@ -81,7 +81,8 @@ reagentc /enable
 	#disable or info work as well
 format quick fs=ntfs label="Recovery"
 create partition primary size=1024
-#  	# Manjaro commands #	#
+
+#  	# manjaro commands #	#
 sudo pacman -S openssh
 #GPU switcher
 sudo envycontrol -s hybrid
