@@ -14,7 +14,7 @@ ls
 	#ls -lah l - list, a - hidden files
 pwd
 ../
-	#on windows "cd ../" 
+	#or "cd ../" 
 
 #make folder
 mkdir
