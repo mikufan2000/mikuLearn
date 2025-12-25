@@ -96,6 +96,15 @@ reagentc /enable
 		#disable or info work as well
 format quick fs=ntfs label="Recovery"
 create partition primary size=1024
+#	# windows commands #	#
+winget install --id Git.Git -e --source winget
+	#install git clone
+winget install Helix.Helix
+	#install helix terminal IDE
+diskpart
+	#wipe drives
+ipconfig
+##
 
 #  	# manjaro commands #	#
 sudo pacman -S openssh
