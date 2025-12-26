@@ -1,4 +1,4 @@
-:D terminal notes 
+:D terminal notes generally works on most.
 
 #find user
 whoami
@@ -89,6 +89,18 @@ https://www.youtube.com/watch?v=owebHznEGQ8
 		#windows ssh 2025
 https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 		#winvirt
+
+#	# windows commands #	#
+winget install --id Git.Git -e --source winget
+	#install git clone
+winget install Helix.Helix
+	#install helix terminal IDE
+winget install fastfetch
+	#install fast fetch = show device info
+diskpart
+	#wipe drives
+ipconfig
+	#ip info
 #diskpart windows commands
 set id=de94bba4-06d1-4d40-a16a-bfd50179d6ac gpt attributes=0x8000000000000001
 		#sets recovery 
@@ -96,15 +108,7 @@ reagentc /enable
 		#disable or info work as well
 format quick fs=ntfs label="Recovery"
 create partition primary size=1024
-#	# windows commands #	#
-winget install --id Git.Git -e --source winget
-	#install git clone
-winget install Helix.Helix
-	#install helix terminal IDE
-diskpart
-	#wipe drives
-ipconfig
-##
+#	#
 
 #  	# manjaro commands #	#
 sudo pacman -S openssh
