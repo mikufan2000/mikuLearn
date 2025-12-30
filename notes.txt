@@ -138,7 +138,7 @@ cat ~/.zshrc
 		#check if it is complete.
 source ~/.zshrc
 		#finished
-##alias hx='helix'
+##aliasExamples: hx='helix' , la="ls -lah"
 source ~/.zshrc
 
 #.conf for gpuvirt passthrough 
