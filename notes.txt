@@ -153,6 +153,14 @@ sudo nano /etc/default/grub
 amdgpu.ppfeaturemask=0xffffffff <AMD/INTEL>_iommu=on iommu=pt vfio-pci.ids=<YOUR:GPUID>,<ALSO:GPUAUDIO>
 sudo mkinitcpio -P
 sudo update-grub
+
+#copy desktop custom cursor and monitor position to lockscreen
+sudo cp ~/.config/monitors.xml /var/lib/gdm/.config/
+	#copy monitor xml
+sudo chown gdm:gdm /var/lib/gdm/.config/monitors.xml
+	#give gdm permissions 
+sudo cp -r ~/.local/share/icons/miku-cursor-linux/ /usr/share/icons/
+sudo -u gdm dbus-launch gsettings set org.gnome.desktop.interface cursor-theme 'miku-cursor-linux'
 # 	# 
 
 # mac os #
