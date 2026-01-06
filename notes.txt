@@ -23,6 +23,10 @@ rmdir
 #delete target
 rm -r
 rm -rf
+#text editor linux
+vi
+nano
+hx
 
 #move
 mv <OPTION> <SOURCE> <TARGET>
@@ -91,6 +95,9 @@ https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 		#winvirt
 
 #	# windows commands #	#
+#text editor
+edit
+notepad
 Remove-Item -Path "C:\Your\Folder\Path" -Recurse -Force
 	#-r -Recurse = delete everything inside the folder as well, -f -Force = Forces the deletion of hidden or read-only files.
 	#rm -r -f ".\YourFolder"
@@ -116,6 +123,15 @@ format quick fs=ntfs label="Recovery"
 create partition primary size=1024
 #wttr on powershell
 (Invoke-WebRequest -UseBasicParsing -Uri "http://wttr.in/" -UserAgent "curl").Content
+#alias windows example:
+Set-ExecutionPolicy RemoteSigned
+	#By default, PowerShell is set to Restricted mode, which prevents any scripts (including your own). RemoteSigned policy is the "sweet spot."
+<editor> $PROFILE
+	#editor = edit, notepad, or hx
+function wttr {
+    (Invoke-WebRequest -UseBasicParsing -Uri "http://wttr.in/" -UserAgent "curl").Content
+}
+
 #	#
 
 #  	# manjaro commands #	#
