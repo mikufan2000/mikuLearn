@@ -114,6 +114,8 @@ reagentc /enable
 		#disable or info work as well
 format quick fs=ntfs label="Recovery"
 create partition primary size=1024
+#wttr on powershell
+(Invoke-WebRequest -UseBasicParsing -Uri "http://wttr.in/" -UserAgent "curl").Content
 #	#
 
 #  	# manjaro commands #	#
