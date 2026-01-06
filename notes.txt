@@ -15,7 +15,7 @@ ls
 pwd
 ../
 	#or "cd ../" 
-
+clear
 #make folder
 mkdir
 #delete empty folder
@@ -95,6 +95,8 @@ https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 		#winvirt
 
 #	# windows commands #	#
+cls
+clear
 #text editor
 edit
 notepad
