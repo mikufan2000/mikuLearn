@@ -91,6 +91,10 @@ https://github.com/virtio-win/virtio-win-pkg-scripts/blob/master/README.md
 		#winvirt
 
 #	# windows commands #	#
+Remove-Item -Path "C:\Your\Folder\Path" -Recurse -Force
+	#-r -Recurse = delete everything inside the folder as well, -f -Force = Forces the deletion of hidden or read-only files.
+	#rm -r -f ".\YourFolder"
+		#rm = Remove-Item
 winget search Helix.Helix
 	#search for Helix IDE with windows package manager
 winget install --id Git.Git -e --source winget
