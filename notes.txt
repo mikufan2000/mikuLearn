@@ -27,7 +27,8 @@ rm -rf
 vi
 nano
 hx
-
+#count lines
+wc
 #move
 mv <OPTION> <SOURCE> <TARGET>
 		#OPTION: 
