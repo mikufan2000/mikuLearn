@@ -138,6 +138,8 @@ function wttr {
 
 #  	# manjaro commands #	#
 sudo pacman -S openssh
+#Temps
+sudo pacman -S s-tui
 #GPU switcher
 sudo envycontrol -s hybrid
 sudo envycontrol -s integrated 
