@@ -21,7 +21,8 @@ mkdir
 #delete empty folder
 rmdir
 #delete target
-rm -r
+rm -r 
+	#Throws an error/warning
 rm -rf
 #text editor linux
 vi
