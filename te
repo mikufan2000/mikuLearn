@@ -1,0 +1,7 @@
+alias la='ls -lah'
+alias ll='ls -lh'
+alias chess='chess-tui -e /usr/local/bin/stockfish'
+PROMPT='%1d %# '
+alias notes='cat /Users/miku-fan/Projects/mikuLearn/notes.txt'
+alias notes-update='rm -rf /Users/miku-fan/Projects/mikuLearn && git clone https://github.com/mikufan2000/mikuLearn.git /Users/miku-fan/Projects/mikuLearn'
+alias sx='sudo hx'
