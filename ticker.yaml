@@ -1,0 +1,33 @@
+# ~/.ticker.yaml
+
+# Your specific holdings (lots)
+lots:
+  - symbol: "O"
+    quantity: 9.030193
+    unit_cost: 62.30
+  - symbol: "VZ"
+    quantity: 26.000083
+    unit_cost: 42.38
+  - symbol: "EPR"
+    quantity: 8
+    unit_cost: 59.46
+
+# Optional: Watchlist for assets you just want to track prices for
+watchlist:
+  - BTC-USD
+  - ETH-USD
+  - XMR-USD
+  - SOL-USD
+  - PAXG-USD
+  - ^GSPC
+  - ^DJI
+  - ^IXIC
+  - ^RUT
+  - GC=F
+  - SI=F
+
+# Display settings
+show-positions: true
+show-summary: true
+interval: 1
+sort: user
