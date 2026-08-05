@@ -7,8 +7,8 @@
 
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
-alias la='ls -lah'
-alias ll='ls -lh'
+alias la='ls -lah --color=auto'
+alias ll='ls -lh --color=auto'
 alias hx='helix'
 alias sx='sudo helix'
 alias notes='bat /home/mikuARCH/.miku/notes.txt'
