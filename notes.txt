@@ -137,7 +137,7 @@ function wttr {
 
 #	#
 
-#  	# manjaro commands #	#
+#  	# manjaro/arch commands #	#
 sudo pacman -S openssh
 #Temps
 sudo pacman -S s-tui
