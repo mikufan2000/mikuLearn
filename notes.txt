@@ -203,5 +203,6 @@ sudo ipconfig setenforceen0 DHCP; sudo ipconfig getifaddr en0
 		#renew wifi ip
 #	#
 
-#git copy these notes. INTO CURRENT FOLDER. C:\ by default for windows. helps to copy the path from explorer. then for example use "cd  D:\Notes" or "cd C:\Users\mikufanfakeusernametestthanksforreadingthisfar\Downloads"
+# git notes
 git clone https://github.com/mikufan2000/mikuLearn.git
+	# "git clone" will all notes INTO CURRENT FOLDER opened in terminal C:\ by default for windows. Unless you direct where you want it to go for example: git clone https://github.com/mikufan2000/mikuLearn.git C:\Users\mikufanfakeusernametestthanksforreadingthisfar\Documents"
