@@ -137,7 +137,7 @@ function wttr {
 
 #	#
 
-#  	# manjaro/arch commands #	#
+#  	# manjaro/Arch commands #	#
 sudo pacman -S openssh
 #Temps
 sudo pacman -S s-tui
@@ -176,6 +176,12 @@ vfio_pci vfio vfio_iommu_type1
 
 sudo nano /etc/modprobe.d/vfio.conf
 options vfio-pci ids=<YOUR:GPUID>,<ALSO:GPUAUDIO>
+
+#other useful Arch commands
+lsblk
+	# -f -p
+cfdisk
+	#easy partitioning
 
 #grub info
 sudo nano /etc/default/grub 
