@@ -20,4 +20,6 @@ alias cleanup='if pacman -Qdtq > /dev/null; then sudo pacman -Rns $(pacman -Qdtq
 alias keybinds='bat .xtr/keybinds'
 alias sc='grim -g "$(slurp)" "/home/mikuARCH/Pictures/$(date +'%Y%m%d_%H%M%S').png"'
 alias miku='bat -l txt /home/mikuARCH/.xtr/1'
+alias ff='fastfetch'
+alias bistory='bat /home/mikuARCH/.bash_history'
 PS1='[\W \$ '
