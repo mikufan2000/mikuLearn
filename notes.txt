@@ -131,15 +131,10 @@ reagentc /enable
 		#disable or info work as well
 format quick fs=ntfs label="Recovery"
 create partition primary size=1024
-#wttr on powershell
-(Invoke-WebRequest -UseBasicParsing -Uri "http://wttr.in/" -UserAgent "curl").Content
 #alias windows example:
-Set-ExecutionPolicy RemoteSigned
-	#By default, PowerShell is set to Restricted mode, which prevents any scripts (including your own). RemoteSigned policy is the "sweet spot."
 <editor> $PROFILE
 	#editor = edit, notepad, or hx
-function wttr {
-    (Invoke-WebRequest -UseBasicParsing -Uri "http://wttr.in/" -UserAgent "curl").Content
+function ALIAS { COMMAND }
 }
 
 #	#
