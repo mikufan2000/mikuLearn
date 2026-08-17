@@ -1,0 +1,5 @@
+function la { ls -Force }
+function ll { ls -Exclude .* }
+function notes { cat 'C:\Users\raex\Projects\fog\mikuLearn\notes.txt' }
+function notes-update { Remove-Item -Path 'C:\Users\raex\Projects\fog\mikuLearn' -Recurse -Force ; git clone https://github.com/mikufan2000/mikuLearn.git 'C:\Users\raex\Projects\fog\mikuLearn' }
+function ff { fastfetch }
